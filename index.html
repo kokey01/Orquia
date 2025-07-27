@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orquia Gervic B. - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #536406;
+      --secondary: #042e43;
+      --accent: #051a62;
+      --light: #faf7f7;
+      --text: #010607;
+      --highlight: #007bff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    nav {
+      background-color: var(--dark);
+      padding: 10px 0;
+      text-align: right;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 4px solid var(--highlight);
+    }
+
+    nav a {
+      color: rgb(245, 251, 251);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 60;
+      font-size: 14px;
+      position: relative;
+      padding: 5px 10px;
+    }
+    
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: var(--light);
+      transition: 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .profile-img {
+      margin-top: 30px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 3px;
+      background-color: var(--highlight);
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hobbies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .hobby-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .hobby-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .hobby-info {
+      padding: 1rem;
+    }
+
+    .hobby-title {
+      font-size: 1.3rem;
+      color: var(--highlight);
+      margin-bottom: 0.5rem;
+    }
+
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .video-card {
+      flex: 1 1 300px;
+    }
+
+    .video-title {
+      margin-top: 0.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 0rem 0;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin:0px 0;
+    }
+
+    @media (max-width: 768px) {
+      .profile-img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!--My Logo-->
+  
+  <header style="display:flex;
+  justify-content: space-between; align-items: center; background-color: #333; color: white;
+  padding: 15px 30px;">
+  <img src="360_F_302369243_pF2j5nbvY0ytmJ9axtY4HjmysYNTj2eO.jpg" alt="My logo" style="width: 100px; height: 100;border-radius: 50%;">
+
+<!--My navigation-->
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#highlights">HIGHLIGHTS</a>   
+    <a href="#contact">CONTACT</a>   
+  </nav>
+
+  </header>
+
+<!--My Profile Picture and Title-->
+
+  <header id="home">
+    <div class="container">
+      <img src="516125141_1059289502525601_3098862368846168509_n.jpg" alt="Portrait" class="profile-img" />
+      <h1>Orquia Gervic B.</h1>
+      <p class="title">IT Student<br>Eastern Samar State University</p>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>I'm a 21-year-old IT student. As the middle child in my family, I've learned to be adaptable and understanding.</p>
+        <p>Outside of my studies, I enjoy playing Mobile Legends, shooting hoops, and spending time with my dog.</p>
+        <p>Basketball is my absolute favorite activity — I love the teamwork, competition, and fun.</p>
+        <p>Below, you will find a short clips of my basketball shooting practice and others.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--My Image-->
+  
+  <section id="skills" class="section" style="background-color: #f1f6f9;">
+    <div class="container">
+      <h2 class="section-title">My Hobbies</h2>
+      <div class="hobbies">
+        <div class="hobby-card">
+          <img src="515732358_1300048428358591_714609626910712442_n.jpg" alt="Mobile Legends" class="hobby-image" />
+          <div class="hobby-info">
+            <h3 class="hobby-title">Mobile Gaming</h3>
+            <p>I enjoy playing Mobile Legends. The strategy and teamwork make it exciting.</p>
+          </div>
+          
+        </div>
+        <div class="hobby-card">
+          <img src="received_1083327106955339.jpeg" alt="Basketball" class="hobby-image" />
+          <div class="hobby-info">
+            <h3 class="hobby-title">Basketball</h3>
+            <p>Basketball is my favorite sport. I enjoy the energy and teamwork involved.</p>
+          </div>
+
+        </div>
+        <div class="hobby-card">
+          <img src="Screenshot_20250713-231351_1.jpg" alt="Dog" class="hobby-image" />
+          <div class="hobby-info">
+            <h3 class="hobby-title">Bokie/Boks</h3>
+            <p>I adore dogs. Their loyalty and playfulness make them the best companions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--My Video-->
+
+  <section id="highlights" class="section">
+    <div class="container">
+      <h2 class="section-title">Highlights</h2>
+      <div class="video-grid">
+        <div class="video-card">
+          <video width="100%" controls>
+            <source src="3d18824c2c707846ede9c5853a345120.mp4" type="video/mp4" />
+          </video>
+          <p class="video-title">Gaming📱</p>
+        </div>
+        <div class="video-card">
+          <video width="100%" controls>
+            <source src="1e2e1ae58badd6cab865ff30bcb255c8.mp4" type="video/mp4" />
+          </video>
+          <p class="video-title">SHOOTING🏀</p>
+        </div>
+        <div class="video-card">
+          <video width="100%" controls>
+            <source src="2b10a7578fdb4039f5655207bca1a792.mp4" type="video/mp4" />
+          </video>
+          <p class="video-title">Kokak🔥</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Footer/Pinakababa-->
+
+  <footer>
+    <div class="max-w-6xl mx-auto px-4 text-center"></div>
+    <section id="contact" class="section"></section>
+    <div class="container">
+      <p>© 2025 Orquia Gervic B. / All Rights Reserved</p>
+      <p>#MobileLegends / #ClashOfClans</p>
+      <p>📞 Contact Number: 09512567114</p>
+      <p>📧 Google Name: Gervic Orquia</p>
+    </div>
+  </footer>
+</body>
+</html>
